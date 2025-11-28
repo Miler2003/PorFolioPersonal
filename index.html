@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acceso | Miler.dev</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <section class="login-wrapper">
+      <div class="login-card">
+        <h2>Acceso Restringido</h2>
+        <p class="subtitle">Solo personal autorizado</p>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Clave (ok)</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+  </body>
+</html>

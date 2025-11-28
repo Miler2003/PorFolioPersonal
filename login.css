@@ -1,0 +1,144 @@
+/* -------------------------------------- */
+/* RESET Y FUENTE */
+/* -------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #1a255a, #0d0f23);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* -------------------------------------- */
+/* CONTENEDOR PRINCIPAL */
+/* -------------------------------------- */
+.login-wrapper {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------------- */
+/* TARJETA (glass premium) */
+/* -------------------------------------- */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 35px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+
+  animation: fadeUp 0.6s ease both;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9db4ff;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* -------------------------------------- */
+/* INPUTS */
+/* -------------------------------------- */
+.input-group {
+  margin-bottom: 1.4rem;
+}
+
+.input-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #cdd5ff;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  transition: 0.25s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #488bff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 8px rgba(72, 139, 255, 0.6);
+}
+
+/* -------------------------------------- */
+/* BOTÓN */
+/* -------------------------------------- */
+.login-button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #488bff, #3a47d5);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* -------------------------------------- */
+/* ANIMACIÓN */
+/* -------------------------------------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------------- */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 28px 25px;
+  }
+
+  .login-card h2 {
+    font-size: 1.7rem;
+  }
+}

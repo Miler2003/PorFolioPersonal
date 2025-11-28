@@ -1,0 +1,244 @@
+/* ------------------------------
+   RESET GENERAL
+--------------------------------*/
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0d0f23;
+  color: #fff;
+}
+
+/* ------------------------------
+ NAVBAR
+--------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-horizontal {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.menu-horizontal a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-horizontal a:hover {
+  color: #00d2ff;
+}
+
+/* Menú vertical */
+.submenu-parent {
+  position: relative;
+}
+
+.menu-vertical {
+  position: absolute;
+  background: #14172e;
+  top: 30px;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.menu-vertical li a {
+  display: block;
+  padding: 10px 15px;
+  color: #dce3ff;
+}
+
+.menu-vertical li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submenu-parent:hover .menu-vertical {
+  display: block;
+}
+
+/* ------------------------------
+ SECCIONES
+--------------------------------*/
+.seccion-gradient {
+  padding: 120px 40px 80px;
+  background: radial-gradient(circle at top left, #1a255a, #0d0f23);
+}
+
+.seccion-light {
+  padding: 120px 40px;
+  background: #101225;
+}
+
+.container-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.img-sobre-mi {
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.texto h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.texto p {
+  color: #d4d8e7;
+  line-height: 1.6;
+}
+
+h3 {
+  margin-top: 25px;
+}
+
+/* ------------------------------
+ TECNOLOGÍAS
+--------------------------------*/
+.tech-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 20px;
+}
+
+.tech-item {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.tech-item img {
+  width: 50px;
+}
+
+/* ------------------------------
+  PORTFOLIO CARDS
+--------------------------------*/
+.card-proyecto {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 18px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-proyecto h3 {
+  font-size: 22px;
+}
+
+.img-proyecto {
+  width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.tags span {
+  background: #fff;
+  color: #000;
+  padding: 6px 14px;
+  margin-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ------------------------------
+  FORMULARIO
+--------------------------------*/
+.seccion-form {
+  padding: 120px 40px;
+  background: #0b0d1a;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 520px;
+  margin: auto;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-top: 12px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #00d2ff, #3a47d5);
+  border: none;
+  color: white;
+  border-radius: 12px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ------------------------------
+  FOOTER
+--------------------------------*/
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #000;
+  margin-top: 60px;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miler Rodríguez – Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ========================== -->
+    <!--        NAVBAR              -->
+    <!-- ========================== -->
+    <header class="navbar">
+      <div class="logo">MILER.dev</div>
+      <nav>
+        <ul class="menu-horizontal">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+
+          <!-- Menú vertical -->
+          <li class="submenu-parent">
+            <a href="#portfolio">Portfolio ▾</a>
+
+            <ul class="menu-vertical">
+              <li><a href="#pucp">Universidad PUCP</a></li>
+              <li><a href="#discord">Discord.exe</a></li>
+              <li><a href="#otros">Otros proyectos</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contacto">Contáctame</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========================== -->
+    <!--        SOBRE MÍ            -->
+    <!-- ========================== -->
+    <section id="sobre-mi" class="seccion-gradient">
+      <div class="container-flex">
+        <img src="IHC/imgDiv.jpg" class="img-sobre-mi" />
+
+        <div class="texto">
+          <h2>Sobre mí</h2>
+          <p>
+            Soy Miler Rodríguez, estudiante de 4º año de Ingeniería de Software
+            en la Universidad Peruana de Ciencias Aplicadas. Egresado de la
+            carrera técnica de Soporte y Mantenimiento en el Instituto Senati,
+            actualmente complementando mi formación con creación de contenido
+            tecnológico en TikTok.
+          </p>
+
+          <p>
+            Me considero una persona proactiva, con interés en el desarrollo de
+            software e innovación tecnológica.
+          </p>
+
+          <h3>Tecnologías</h3>
+
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src=" IHC/c++.png" />
+              <p>C++</p>
+            </div>
+            <div class="tech-item">
+              <img src="IHC/python.png" />
+              <p>Python</p>
+            </div>
+            <div class="tech-item">
+              <img src="IHC/html.png" />
+              <p>HTML</p>
+            </div>
+            <div class="tech-item">
+              <img src="IHC/css.png" />
+              <p>CSS</p>
+            </div>
+            <div class="tech-item">
+              <img src="IHC/figma.jpg" />
+              <p>Figma</p>
+            </div>
+            <div class="tech-item">
+              <img src="IHC/cisco.png" />
+              <p>Cisco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!--        EXPERIENCIA         -->
+    <!-- ========================== -->
+    <section id="experiencia" class="seccion-light">
+      <h2>Experiencia</h2>
+      <div class="container-flex">
+        <div class="texto">
+          <p>
+            Experiencia en soporte técnico, redes, creación de contenido y
+            proyectos web enfocados en usabilidad y rendimiento.
+          </p>
+        </div>
+
+        <div class="video-box">
+          <video width="100%" controls>
+            <source src="IHC/Programando.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!--        PORTFOLIO           -->
+    <!-- ========================== -->
+    <section id="portfolio" class="seccion-gradient">
+      <h2>Portfolio</h2>
+      <p class="subtitulo">
+        Soluciones innovadoras que transforman ideas en realidad
+      </p>
+
+      <!-- Proyecto PUCP -->
+      <div class="card-proyecto" id="pucp">
+        <div>
+          <h3>Universidad_Pontificia_Católica_del_Perú.exe</h3>
+          <div class="detalle">
+            <p><strong>Cliente:</strong> PUCP</p>
+            <p><strong>Fecha:</strong> Enero 2024</p>
+          </div>
+          <p>
+            Landing page desarrollada para la Universidad PUCP, enfocada en la
+            modalidad a distancia UC.
+          </p>
+
+          <div class="tags">
+            <span>CSS</span><span>HTML5</span><span>JavaScript</span
+            ><span>Next.js</span>
+          </div>
+        </div>
+
+        <img src="IHC/cato.png" class="img-proyecto" />
+      </div>
+
+      <!-- Proyecto Discord -->
+      <div class="card-proyecto" id="discord">
+        <div>
+          <h3>Discord.exe</h3>
+          <div class="detalle">
+            <p><strong>Cliente:</strong> Discord Enterprise</p>
+            <p><strong>Fecha:</strong> Septiembre 2024</p>
+          </div>
+
+          <p>
+            Landing page para eventos y entrevistas de influencers de
+            comunicación.
+          </p>
+
+          <div class="tags">
+            <span>CSS</span><span>HTML5</span><span>JavaScript</span
+            ><span>Next.js</span>
+          </div>
+        </div>
+
+        <img src="IHC/dc.png" class="img-proyecto" />
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!--       FORMULARIO           -->
+    <!-- ========================== -->
+    <section id="contacto" class="seccion-form">
+      <div class="form-box">
+        <h2>Contáctame</h2>
+
+        <form>
+          <label>Nombre</label>
+          <input type="text" placeholder="Escribe tu nombre" />
+
+          <label>Email</label>
+          <input type="email" placeholder="ejemplo@email.com" />
+
+          <label>Mensaje</label>
+          <textarea rows="5" placeholder="¿En qué puedo ayudarte?"></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!--          FOOTER            -->
+    <!-- ========================== -->
+    <footer>© 2025 Miler Rodríguez – Portafolio Personal</footer>
+  </body>
+</html>
